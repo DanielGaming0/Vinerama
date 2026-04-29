@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinerama - Stumble Guys</title>
+    
+    <!-- Fonte limpa e moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Fundo preto claro (cinza escuro) */
+        body {
+            background-color: #18181b; /* Preto claro elegante */
+            color: #f4f4f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        /* Título e Subtítulo */
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #a1a1aa; /* Cinza claro para o texto */
+            font-weight: 400;
+        }
+
+        /* Cartão de Download com bordas arredondadas */
+        .download-card {
+            background-color: #27272a; /* Um tom ligeiramente mais claro que o fundo */
+            padding: 40px 30px;
+            border-radius: 32px; /* Bem arredondado */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid #3f3f46;
+        }
+
+        .game-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        /* Tag de versão arredondada */
+        .version-tag {
+            display: inline-block;
+            background-color: #3f3f46;
+            color: #d4d4d8;
+            padding: 6px 16px;
+            border-radius: 50px; /* Formato de pílula */
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        /* Botão de Download super arredondado */
+        .btn-download {
+            display: block;
+            background-color: #3b82f6; /* Azul moderno */
+            color: #ffffff;
+            text-decoration: none;
+            padding: 18px 32px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px; /* Formato de pílula */
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-download:hover {
+            background-color: #2563eb; /* Azul mais escuro no hover */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+        }
+
+        .btn-download:active {
+            transform: translateY(1px);
+        }
+
+        /* Responsividade */
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 2.8rem; }
+            .hero p { font-size: 1rem; }
+            .download-card { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <!-- Apresentação -->
+        <header class="hero">
+            <h1>VINERAMA</h1>
+            <p>O mestre das coroas no Stumble Guys!</p>
+        </header>
+
+        <!-- Área de Download -->
+        <section class="download-card">
+            <h2 class="game-title">Stumble Guys</h2>
+            <div class="version-tag">Versão 0.97</div>
+            
+            <a href="https://www.softonic.com.br/download/stumble-guys/android/post-download?dt=internalDownload" 
+               class="btn-download" target="_blank">
+                Baixar Agora
+            </a>
+        </section>
+    </main>
+
+</body>
+</html>
